@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitapligim</title>
-     nav ul {
+       <link rel="stylesheet" href="style.css" />
+    <style>
+
+        nav ul {
 
             display: flex;
             gap: 1rem;
@@ -12,8 +15,51 @@
             padding: 0;
         }
 
+        .kart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.kart {
+  flex: 1 1 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+}
+@media (max-width: 600px) {
+  .kart {
+    flex: 1 1 100%;
+  }
+}
+
+
+    </style>
+
 </head>
 <body>
+    
+    <style>
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+
+            flex: 1;
+        }
+
+
+
+
+
+    </style>
+
+
+    
 
     <header>
         <h1>Kitapligim</h1>
