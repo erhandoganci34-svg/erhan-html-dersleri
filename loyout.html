@@ -4,15 +4,14 @@
   gap: 1rem;
 }
 .kart {
-  flex: 1 1 300px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 1rem;
+  flex: 1 1 100%;      
 }
-@media (max-width: 600px) {
-  .kart {
-    flex: 1 1 100%;
-  }
+@media (min-width: 600px) {
+  .kart { flex: 1 1 45%; }
+}
+@media (min-width: 900px) {
+  .kart { flex: 1 1 30%; }
+}
 }
 
 
