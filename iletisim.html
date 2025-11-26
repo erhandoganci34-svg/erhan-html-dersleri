@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iletisim</title>
+
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function (e) {
+      const ad = document.getElementById('ad').value.trim();
+      const mesaj = document.getElementById('mesaj').value.trim();
+      if (!ad || !mesaj) {
+        e.preventDefault();
+        alert('Lütfen tüm alanları doldurun');
+      }
+    });
+  });
+</script>
 </head>
 <form>
 
