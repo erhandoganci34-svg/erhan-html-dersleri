@@ -1,1 +1,13 @@
 
+function addTodo() {
+  const text = document.getElementById('task').value.trim();
+  if (!text) return;
+  const li = document.createElement('li');
+  li.textContent = text;
+  const delBtn = document.createElement('button');
+  delBtn.textContent = 'Sil';
+  delBtn.onclick = () => li.remove();
+  li.appendChild(delBtn);
+  document.getElementById('list').appendChild(li);
+  document.getElementById('task').value = '';
+}
